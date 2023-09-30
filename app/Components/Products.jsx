@@ -13,6 +13,23 @@ const Products = () => {
       {allCozyTables.map((cozyTables, i) => {
         const { title, tables, id } = cozyTables;
 
+        useEffect(() => {
+          const handleScroll = () => {
+            listOfIds.forEach((section) => {
+              const rect = section.getBoundingClientRect();
+              console.log(rect);
+              if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+                setActiveSection(section.id);
+              }
+            });
+          };
+
+          window.addEventListener("scroll", handleScroll);
+          return () => {
+            window.removeEventListener("scroll", handleScroll);
+          };
+        }, []);
+
         return (
           <Wrapper id={id} key={id}>
             <div>

@@ -27,6 +27,25 @@ const Wrapper = styled.div`
     color: rgb(25, 20, 43);
     font-size: 20px;
   }
+
+  @media (max-width: 1280px) {
+    color: red;
+    width: 100%;
+    padding: 16px 80px;
+    h1 {
+      line-height: 46px;
+      font-size: 44px;
+    }
+    div {
+      height: 75px;
+    }
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 16px 20px;
+  }
 `;
 
 export default Wrapper;

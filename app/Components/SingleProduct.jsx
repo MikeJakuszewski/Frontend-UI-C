@@ -21,7 +21,10 @@ const SingleProduct = ({ table, cozyTablesId }) => {
         <div className="desc">
           <div>{text}</div>
           <div>
-            {subtext} <span style={{ color: "#AA6432" }}>{table.discount}</span>{" "}
+            {subtext}{" "}
+            <span style={{ color: "#AA6432", cursor: "default" }}>
+              {table.discount}
+            </span>{" "}
           </div>
           <span style={{ color: "#77A2F8" }}>Customise &rarr;</span>{" "}
         </div>

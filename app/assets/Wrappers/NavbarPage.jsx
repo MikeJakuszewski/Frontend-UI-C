@@ -34,6 +34,24 @@ const Wrapper = styled.div`
       }
     }
   }
+
+  @media (max-width: 1280px) {
+    div {
+      div {
+        padding: 20px 32px 20px 16px;
+        a {
+          display: none;
+        }
+        a:first-child {
+          display: block;
+        }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 768px) {
+  }
 `;
 
 export default Wrapper;
