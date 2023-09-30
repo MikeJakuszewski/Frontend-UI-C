@@ -7,7 +7,7 @@ const Header = () => {
       <div>
         <div>
           <h1>Tables</h1>
-          <span>A Perfect pairing to your sofa.</span>
+          <span>A perfect pairing to your sofa.</span>
         </div>
       </div>
     </Wrapper>

@@ -108,6 +108,82 @@ const Wrapper = styled.div`
       font-family: "Larsseit-Thin";
       span {
         font-family: "Larsseit Medium";
+        cursor: pointer;
+      }
+    }
+    span {
+      cursor: pointer;
+    }
+  }
+
+  @media (max-width: 1024px) {
+  }
+  @media (max-width: 1024px) {
+    .img {
+      .container {
+        bottom: 3px;
+        right: 3px;
+        height: 20px;
+        padding: 2px 4px;
+        justify-content: center;
+        gap: 4;
+        div {
+          height: 10px;
+          font-size: 10px;
+          line-height: 10px;
+        }
+        div + div {
+          width: 12px;
+          height: 12px;
+        }
+      }
+    }
+
+    .desc {
+      gap: 2px;
+      width: 100%;
+      max-height: 47px;
+      div {
+        width: 190px;
+        font-size: 12px;
+        line-height: 16px;
+      }
+      div + div {
+        height: 26px;
+        gap: 4px;
+        margin: 0;
+        span {
+          font-size: 9px;
+        }
+      }
+      span {
+        font-size: 10px;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    align-items: center;
+    width: 180px;
+    height: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    .img {
+      width: 100%;
+      height: 122px;
+      span {
+      }
+    }
+    .desc {
+      gap: 2px;
+      width: 100%;
+      max-height: 47px;
+      .div {
+        width: 100%;
+        font-size: 12px;
+      }
+      div + div {
+        gap: 2px;
       }
     }
   }
