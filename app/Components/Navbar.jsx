@@ -47,16 +47,7 @@ const Navbar = () => {
                 size={25}
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
               />
-              <div className="dropdown responsive">
-                {allCozyTables.map((title) => (
-                  <div className="text-white">
-                    {" "}
-                    <a href={`#${title.id}`} key={title.title}>
-                      {title.title}
-                    </a>
-                  </div>
-                ))}
-              </div>
+              <Dropdown allCozyTables={allCozyTables} />
             </>
           ) : (
             <RiArrowDownSLine

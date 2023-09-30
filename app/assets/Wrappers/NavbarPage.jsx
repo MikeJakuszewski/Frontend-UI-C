@@ -62,6 +62,12 @@ const Wrapper = styled.div`
       border-radius: 4px;
       padding: 0;
       margin: 0;
+      right: 0.5px;
+      div {
+        padding: 20px 32px 20px 26px;
+        width: 100%;
+        display: block;
+      }
     }
   }
   @media (max-width: 768px) {

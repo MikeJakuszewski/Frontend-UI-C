@@ -1,10 +1,15 @@
-import Wrapper from "../assets/Wrappers/DropdownPage";
-
-const Dropdown = () => {
+const Dropdown = ({ allCozyTables }) => {
   return (
-    <Wrapper>
-      <a href="#">Test</a>
-    </Wrapper>
+    <div className="dropdown responsive">
+      {allCozyTables.map((title, i) => (
+        <div key={i} className="text-white">
+          {" "}
+          <a href={`#${title.id}`} key={title.title}>
+            {title.title}
+          </a>
+        </div>
+      ))}
+    </div>
   );
 };
 export default Dropdown;
