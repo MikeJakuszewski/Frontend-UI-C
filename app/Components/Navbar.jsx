@@ -27,7 +27,7 @@ const Navbar = () => {
       <div>
         <div>
           {allCozyTables.map((title) => (
-            <a>{title.title}</a>
+            <a key={title.title}>{title.title}</a>
           ))}
         </div>
       </div>

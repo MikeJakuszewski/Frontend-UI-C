@@ -1,25 +1,28 @@
 "use client";
 import { allCozyTables } from "../constants";
-import TableUnit from "./TableUnit";
+import SingleProduct from "./SingleProduct";
+import Wrapper from "../assets/Wrappers/ProductsPage";
 
 const Products = () => {
   return (
-    <div>
+    <>
       {allCozyTables.map((cozyTables, i) => {
-        const { title, tables } = cozyTables;
-
+        const { title, tables, id } = cozyTables;
+        console.log(id);
         return (
-          <div key={title}>
-            {title}
+          <Wrapper id={id} key={id}>
             <div>
+              <div className="text">{title}</div>
+            </div>
+            <div className="tables">
               {tables.map((table) => {
-                return <TableUnit key={table.id} {...table} />;
+                return <SingleProduct key={table.id} {...table} />;
               })}
             </div>
-          </div>
+          </Wrapper>
         );
       })}
-    </div>
+    </>
   );
 };
 export default Products;
