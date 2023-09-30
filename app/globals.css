@@ -51,3 +51,7 @@ body {
 a {
   text-decoration: none;
 }
+
+.dropdown {
+  display: none;
+}

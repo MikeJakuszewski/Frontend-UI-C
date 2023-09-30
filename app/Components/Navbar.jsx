@@ -2,9 +2,13 @@
 import React, { useEffect, useState } from "react";
 import Wrapper from "../assets/Wrappers/NavbarPage";
 import { allCozyTables } from "../constants";
+import { RiArrowDownSLine } from "react-icons/ri";
+import { RiArrowUpSLine } from "react-icons/ri";
+import Dropdown from "./Dropdown";
 
 const Navbar = () => {
   const [scrolling, setScrolling] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,9 +30,41 @@ const Navbar = () => {
     <Wrapper style={{ top: scrolling ? "0px" : "92px" }}>
       <div>
         <div>
-          {allCozyTables.map((title) => (
-            <a key={title.title}>{title.title}</a>
-          ))}
+          {allCozyTables.map((title) => {
+            return (
+              <>
+                <a href={`#${title.id}`} key={title.title}>
+                  {title.title}
+                </a>
+              </>
+            );
+          })}
+
+          {isDropdownOpen ? (
+            <>
+              <RiArrowUpSLine
+                className=" text-white"
+                size={25}
+                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+              />
+              <div className="dropdown responsive">
+                {allCozyTables.map((title) => (
+                  <div className="text-white">
+                    {" "}
+                    <a href={`#${title.id}`} key={title.title}>
+                      {title.title}
+                    </a>
+                  </div>
+                ))}
+              </div>
+            </>
+          ) : (
+            <RiArrowDownSLine
+              className="dropdown text-white"
+              size={25}
+              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+            />
+          )}
         </div>
       </div>
     </Wrapper>

@@ -39,6 +39,10 @@ const Wrapper = styled.div`
     div {
       div {
         padding: 20px 32px 20px 16px;
+        justify-content: space-between;
+        .dropdown {
+          display: block;
+        }
         a {
           display: none;
         }
@@ -46,6 +50,18 @@ const Wrapper = styled.div`
           display: block;
         }
       }
+    }
+    .dropdown.responsive {
+      position: absolute;
+      top: 60px;
+      width: 100vw;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(11, 35, 65);
+      border-radius: 4px;
+      padding: 0;
+      margin: 0;
     }
   }
   @media (max-width: 768px) {
