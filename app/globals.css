@@ -1,6 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: "Larsseit";
+  src: url("./assets//fonts/Larsseit/Larsseit.otf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Larsseit Medium";
+  src: url("./assets//fonts/Larsseit/Larsseit-Medium.otf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Larsseit-Thin";
+  src: url("./assets//fonts/Larsseit/Larsseit-Thin.otf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "QuincyCFBold";
+  src: url("./assets/fonts/QuincyCF/QuincyCF-Bold.otf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "CamptonMedium";
+  src: url("./assets/fonts/Campton/Campton-Medium.otf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "quincycf";
+  src: url("./assets/fonts/QuincyCF/quincycf.otf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Campton-SemiBold";
+  src: url("./assets/fonts/Campton/Campton-SemiBold.otf");
+  font-display: swap;
+}
 
 html {
   box-sizing: border-box;

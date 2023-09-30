@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Wrapper from "../assets/Wrappers/SingleProductPage";
 
-const SingleProduct = ({ id, img, text, subtext, typeOfWood, color }) => {
+const SingleProduct = ({ table, cozyTablesId }) => {
+  const { id, img, text, subtext, typeOfWood, color } = table;
+
   return (
     <Wrapper>
       <div className="img">
@@ -15,12 +17,22 @@ const SingleProduct = ({ id, img, text, subtext, typeOfWood, color }) => {
           </div>
         </span>
       </div>
-      <div className="desc">
-        <div>{text}</div>
-        <div>
-          {subtext} <span style={{ color: "#77A2F8" }}>Customise &rarr;</span>{" "}
+      {cozyTablesId === "tableSets" ? (
+        <div className="desc">
+          <div>{text}</div>
+          <div>
+            {subtext} <span style={{ color: "#AA6432" }}>{table.discount}</span>{" "}
+          </div>
+          <span style={{ color: "#77A2F8" }}>Customise &rarr;</span>{" "}
         </div>
-      </div>
+      ) : (
+        <div className="desc">
+          <div>{text}</div>
+          <div>
+            {subtext} <span style={{ color: "#77A2F8" }}>Customise &rarr;</span>{" "}
+          </div>
+        </div>
+      )}
     </Wrapper>
   );
 };

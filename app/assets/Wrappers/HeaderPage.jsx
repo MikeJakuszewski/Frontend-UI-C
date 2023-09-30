@@ -13,18 +13,19 @@ const Wrapper = styled.div`
     div {
       display: flex;
       flex-direction: column;
-      h1 {
-        margin: 0;
-        font-size: 60px;
-        font-family: "QuincyCFBold" sans-serif;
-        color: rgb(43, 44, 110);
-        span {
-          font-family: "Larsseit Medium" sans-serif;
-          color: rgb(25, 20, 43);
-          font-size: 20px;
-        }
-      }
     }
+  }
+  h1 {
+    margin: 0;
+    height: 75px;
+    font-size: 60px;
+    font-family: "QuincyCFBold", sans-serif;
+    color: rgb(43, 44, 110);
+  }
+  span {
+    font-family: "Larsseit", sans-serif;
+    color: rgb(25, 20, 43);
+    font-size: 20px;
   }
 `;
 

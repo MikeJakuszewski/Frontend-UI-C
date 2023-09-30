@@ -26,7 +26,7 @@ const Wrapper = styled.div`
       a {
         display: inline-block;
         color: rgb(247, 248, 246);
-        font-family: "Larsseit" sans-serif;
+        font-family: "Larsseit", sans-serif;
         font-size: 18px;
         line-height: 18px;
         cursor: pointer;

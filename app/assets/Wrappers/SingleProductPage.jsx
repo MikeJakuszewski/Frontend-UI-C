@@ -93,7 +93,7 @@ const Wrapper = styled.div`
       width: 400px;
       font-size: 16px;
       line-height: 19px;
-      font-family: HafferXH-SemiBold;
+      font-family: "Campton-SemiBold", "sans-serif";
       color: rgb(11, 35, 65);
       cursor: pointer;
     }
@@ -105,6 +105,10 @@ const Wrapper = styled.div`
       align-items: center;
       gap: 8px;
       cursor: auto;
+      font-family: "Larsseit-Thin";
+      span {
+        font-family: "Larsseit Medium";
+      }
     }
   }
 `;
