@@ -9,7 +9,6 @@ import Dropdown from "./Dropdown";
 const Navbar = () => {
   const [scrolling, setScrolling] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 92) {

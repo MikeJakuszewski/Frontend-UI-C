@@ -22,6 +22,11 @@
   font-display: swap;
 }
 @font-face {
+  font-family: "QuincyCF-Thin";
+  src: url("./assets/fonts/QuincyCF/QuincyCF-Thin.otf");
+  font-display: swap;
+}
+@font-face {
   font-family: "CamptonMedium";
   src: url("./assets/fonts/Campton/Campton-Medium.otf");
   font-display: swap;

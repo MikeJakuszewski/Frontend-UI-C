@@ -19,7 +19,7 @@ const Wrapper = styled.div`
     margin: 0;
     height: 75px;
     font-size: 60px;
-    font-family: "QuincyCFBold", sans-serif;
+    font-family: "quincycf", sans-serif;
     color: rgb(43, 44, 110);
   }
   span {
